@@ -8,4 +8,13 @@ public class Person {
         this.lastName = lastName;
         this.point = 0;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", point=" + point +
+                '}';
+    }
 }
