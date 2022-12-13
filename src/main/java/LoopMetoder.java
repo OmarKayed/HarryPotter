@@ -6,6 +6,7 @@ public class LoopMetoder {
        } return totalPoint;
     }
 
+    // A method to find the student with the minimum points
     public Person findMinimum (Person [] people) {
         Person minimum = people[0];
 
@@ -16,6 +17,7 @@ public class LoopMetoder {
         } return minimum;
     }
 
+    // A method to find the student with the maximum points
     public Person findMaximum (Person [] people) {
         Person maximum = people[0];
 
@@ -25,7 +27,7 @@ public class LoopMetoder {
             }
         } return maximum;
     }
-
+    // A method to find the average points between all students
     public int calculateAverage(Person [] people) {
        int total = calculateTotalPoints(people);
        int averagePoints = total / people.length;
