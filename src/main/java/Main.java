@@ -9,12 +9,14 @@ public class Main {
         Person person3 = new Person("Hermione", "Granger");
         Person person4 = new Person("Ginny", "Weasly");
         Person person5 = new Person("Draco", "Malfoy");
+        Person person6 = new Person("Neville", "Longbottom");
 
         person1.addPoints(100);
         person2.addPoints(231);
         person3.addPoints(420);
         person4.addPoints(1000);
         person5.addPoints(215);
+        person6.addPoints(7);
 
         System.out.println("The first person is;" + person1);
         System.out.println("The second person is:" + person2);
@@ -32,6 +34,7 @@ public class Main {
         people[3] = person3;
         people[1] = person4;
         people[4] = person5;
+        people[4] = person6;
 
         // Printed the list after number = 0 is where the array starts - Also made so Array can be printed with an built toString
         System.out.println(Arrays.toString(people));
