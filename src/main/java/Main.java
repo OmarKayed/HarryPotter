@@ -58,6 +58,10 @@ public class Main {
 
         System.out.println("The person with the highest points is: " + findMaximum);
 
+        int calculateAverage = loopMetoder.calculateAverage(people);
+
+        System.out.println("The average points for all the students combined is: " + calculateAverage);
+
 
 
 
