@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 public class LoopMetoder {
-    public int calculateTotalPoints (Person [] people) {
+    public int calculateTotalPoints (ArrayList<Person> people) {
        int totalPoint = 0;
        for (Person person : people) {
            totalPoint += person.getPoint();
@@ -7,8 +9,8 @@ public class LoopMetoder {
     }
 
     // A method to find the student with the minimum points
-    public Person findMinimum (Person [] people) {
-        Person minimum = people[0];
+    public Person findMinimum (ArrayList<Person> people) {
+        Person minimum = people.get(0);
 
         for (Person person : people) {
             if (person.getPoint() < minimum.getPoint()) {
@@ -18,8 +20,8 @@ public class LoopMetoder {
     }
 
     // A method to find the student with the maximum points
-    public Person findMaximum (Person [] people) {
-        Person maximum = people[0];
+    public Person findMaximum (ArrayList<Person> people) {
+        Person maximum = people.get(0);
 
         for (Person person : people) {
             if (person.getPoint() > maximum.getPoint()) {
@@ -28,14 +30,14 @@ public class LoopMetoder {
         } return maximum;
     }
     // A method to find the average points between all students
-    public int calculateAverage(Person [] people) {
+    public int calculateAverage(ArrayList<Person> people) {
        int total = calculateTotalPoints(people);
-       int averagePoints = total / people.length;
+       int averagePoints = total / people.size();
 
        return averagePoints;
     }
 
-    public Person findByFirstName (Person [] people, String searchTerm) {
+    public Person findByFirstName (ArrayList<Person> people, String searchTerm) {
         Person studentFirstName = null;
         for (Person person : people) {
             if (searchTerm.contains(person.getFirstName())) {
@@ -44,7 +46,7 @@ public class LoopMetoder {
         } return studentFirstName;
     }
 
-    public Person findByLastName (Person [] people, String searchTerm) {
+    public Person findByLastName (ArrayList<Person> people, String searchTerm) {
         Person studentLastName = null;
         for (Person person : people) {
             if (searchTerm.contains(person.getLastName())) {
@@ -54,7 +56,7 @@ public class LoopMetoder {
 
     }
 
-    public Person findName (Person [] people, String searchTerm) {
+    public Person findName (ArrayList<Person> people, String searchTerm) {
         Person studentName = null;
         for (Person person : people) {
             if (searchTerm.contains(person.getFirstName() + " " + person.getLastName()));

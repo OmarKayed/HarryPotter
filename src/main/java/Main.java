@@ -1,5 +1,7 @@
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Main {
 
@@ -30,17 +32,11 @@ public class Main {
                 new Person("Ron", "Weasly"),
                 new Person("Hermione", "Granger")};
 
-        // Array can now hold 5 people
-        Person [] people = new Person[5];
-        people[0] = person1;
-        people[2] = person2;
-        people[3] = person3;
-        people[1] = person4;
-        people[4] = person5;
-        people[4] = person6;
+        ArrayList <Person> people = new ArrayList<>();
+        Collections.addAll(people, person1, person2, person3, person4, person5, person6);
 
         // Printed the list after number = 0 is where the array starts - Also made so Array can be printed with an built toString
-        System.out.println(Arrays.toString(people));
+        System.out.println(people);
 
         for (Person listOfStudent : listOfStudents) {
             System.out.println(listOfStudent);
