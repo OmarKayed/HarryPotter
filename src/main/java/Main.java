@@ -12,10 +12,11 @@ public class Main {
         System.out.println(person2);
         System.out.println(person3);
 
-        Person [] array = new Person[3];
+        Person [] listOfStudents ={new Person("Harry", "Potter", 100),
+                new Person("Ron", "Weasly", 231),
+                new Person("Hermione", "Granger",420)};
 
-
-
+        System.out.println(Arrays.toString(listOfStudents));
 
 
 
