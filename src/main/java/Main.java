@@ -1,4 +1,8 @@
+
+import java.util.Arrays;
+
 public class Main {
+
     public static void main(String[] args) {
         Person person1 = new Person("Harry", "Potter", 100);
         Person person2 = new Person("Ron", "Weasly", 231);
@@ -7,6 +11,12 @@ public class Main {
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person3);
+
+        Person [] array = new Person[3];
+
+
+
+
 
 
     }
