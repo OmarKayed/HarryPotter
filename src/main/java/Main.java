@@ -50,6 +50,10 @@ public class Main {
 
         System.out.println("The total points are: " + totalPoints);
 
+        Person findMinimum = loopMetoder.findMinimum(people);
+
+        System.out.println("The person with the lowest points: " + findMinimum);
+
 
 
 
