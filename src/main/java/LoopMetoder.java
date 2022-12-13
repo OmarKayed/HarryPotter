@@ -35,4 +35,23 @@ public class LoopMetoder {
        return averagePoints;
     }
 
+    public Person findByFirstName (Person [] people, String searchTerm) {
+        Person studentFirstName = null;
+        for (Person person : people) {
+            if (searchTerm.contains(person.getFirstName())) {
+                studentFirstName = person;
+            }
+        } return studentFirstName;
+    }
+
+    public Person findByLastName (Person [] people, String searchTerm) {
+        Person studentLastName = null;
+        for (Person person : people) {
+            if (searchTerm.contains(person.getLastName())) {
+                studentLastName = person;
+            }
+        } return studentLastName;
+
+    }
+
 }
