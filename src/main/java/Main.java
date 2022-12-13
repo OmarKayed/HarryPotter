@@ -62,6 +62,18 @@ public class Main {
 
         System.out.println("The average points for all the students combined is: " + calculateAverage);
 
+        Person findByFirstName = loopMetoder.findByFirstName(people, "Harry");
+
+        System.out.println(findByFirstName.getFirstName() + " " + findByFirstName.getLastName());
+
+        Person findByLastName = loopMetoder.findByLastName(people,"Potter");
+
+        System.out.println(findByLastName.getFirstName()+ " " + findByLastName.getLastName());
+
+        Person findByName = loopMetoder.findName(people, "Harry Potter");
+
+        System.out.println(findByName.getFirstName()+ " " + findByName.getLastName());
+
 
 
 
