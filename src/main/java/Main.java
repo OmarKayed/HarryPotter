@@ -54,6 +54,10 @@ public class Main {
 
         System.out.println("The person with the lowest points: " + findMinimum);
 
+        Person findMaximum = loopMetoder.findMaximum(people);
+
+        System.out.println("The person with the highest points is: " + findMaximum);
+
 
 
 
