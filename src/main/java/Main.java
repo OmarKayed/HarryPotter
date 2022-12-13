@@ -14,19 +14,24 @@ public class Main {
         person3.addPoints(420);
         person4.addPoints(1000);
 
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
+        System.out.println("The first person is;" + person1);
+        System.out.println("The second person is:" + person2);
+        System.out.println(" The third person is:" + person3);
 
         // Made an array with 3 different characters
         Person [] listOfStudents ={new Person("Harry", "Potter"),
                 new Person("Ron", "Weasly"),
                 new Person("Hermione", "Granger")};
 
+        // Array can now hold 5 people
         Person [] people = new Person[5];
         people[0] = person1;
-        people[1] = person2;
-        people[2] = person3;
+        people[2] = person2;
+        people[3] = person3;
+        people[1] = person4;
+
+        // Printed the list after number = 0 is where the array starts
+        System.out.println(Arrays.toString(people));
 
 
         // Made so the array can be printed with toString for Arrays
