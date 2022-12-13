@@ -54,4 +54,12 @@ public class LoopMetoder {
 
     }
 
+    public Person findName (Person [] people, String searchTerm) {
+        Person studentName = null;
+        for (Person person : people) {
+            if (searchTerm.contains(person.getFirstName() + " " + person.getLastName()));
+            studentName = person;
+        } return studentName;
+    }
+
 }
