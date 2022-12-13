@@ -26,4 +26,11 @@ public class LoopMetoder {
         } return maximum;
     }
 
+    public int calculateAverage(Person [] people) {
+       int total = calculateTotalPoints(people);
+       int averagePoints = total / people.length;
+
+       return averagePoints;
+    }
+
 }
