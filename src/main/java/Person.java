@@ -1,12 +1,12 @@
 public class Person {
     String firstName;
     String lastName;
-    int point;
+    int point = 0;
 
     public Person (String firstName, String lastName, int point){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.point = 0;
+        this.point = point;
     }
 
     @Override
@@ -41,4 +41,10 @@ public class Person {
     public void setPoint(int point) {
         this.point = point;
     }
-}
+
+    public int addPoints() {
+        return addPoints() + point;
+    }
+
+    }
+
